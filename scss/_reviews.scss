@@ -1,0 +1,51 @@
+.reviews {
+    background: url('../img/reviews/bg-reviews.png') no-repeat;
+    background-size: cover;
+
+    .container {
+        padding: 115px 0 195px;
+
+        @media screen and (max-width: 1200px) {
+            margin: 0 20px;
+        }
+    }
+
+    &-title {
+        text-align: center;
+        margin-bottom: 95px;
+    }
+}
+
+.reviews-block {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &__info {
+        background: $gray-brown;
+        padding: 50px 50px 50px 60px;
+        position: relative;
+        top: -5px;
+
+        @media screen and (max-width: 576px) {
+            padding: 20px 20px 20px 30px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+    
+    &__quotes {
+        font-size: 26px;
+        color: $blue;
+        margin-right: 5px;
+    }
+
+    &__img {
+        width: auto;
+        height: 100%;
+    }
+}

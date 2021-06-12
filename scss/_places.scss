@@ -49,13 +49,10 @@
     }
 
     &__title {
-        @include font('josefin_sansregular', 400, 20px, null, $white, null);
         margin-bottom: 25px;
     }
 
     &__text {
-        @include font('josefin_sansregular', 400, 16px, null, $gray-light, null);
-        line-height: 26px;
         margin-bottom: 50px;
     }
 }
