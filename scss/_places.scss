@@ -34,9 +34,18 @@
     background: rgba($color: #232323, $alpha: 0.9);
     padding: 45px 60px 45px 30px;
 
+    @media screen and (max-width: 1200px) {
+        margin: 0 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex: 100%;
+    }
+
     &__subtitle {
         @include font('josefin_sansregular', 400, 20px, 2px, $gray-light, null);
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+        display: block;
     }
 
     &__title {

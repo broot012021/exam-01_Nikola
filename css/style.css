@@ -357,11 +357,23 @@ a, a:visited {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .how-works .container {
+    flex-direction: column;
+  }
+}
+
 .how-works__block {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 33%;
+}
+
+@media screen and (max-width: 768px) {
+  .how-works__block {
+    margin-bottom: 20px;
+  }
 }
 
 .how-works__block-icon {
@@ -411,13 +423,26 @@ a, a:visited {
   padding: 45px 60px 45px 30px;
 }
 
+@media screen and (max-width: 1200px) {
+  .place-info {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place-info {
+    flex: 100%;
+  }
+}
+
 .place-info__subtitle {
   font-family: "josefin_sansregular";
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 2px;
   color: #e8e8e8;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  display: block;
 }
 
 .place-info__title {
