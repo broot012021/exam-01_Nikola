@@ -373,4 +373,67 @@ a, a:visited {
   padding: 20px;
   margin-bottom: 10px;
 }
+
+.first-place {
+  background: url("../img/places/bg-first_place.png") no-repeat;
+  background-size: cover;
+}
+
+.first-place .container {
+  display: flex;
+  padding: 230px 0 100px;
+}
+
+.second-place {
+  background: url("../img/places/bg-second_place.png") no-repeat;
+  background-size: cover;
+}
+
+.second-place .container {
+  display: flex;
+  padding: 230px 0 100px;
+  justify-content: flex-end;
+}
+
+.first-place {
+  background: url("../img/places/bg-first_place.png") no-repeat;
+  background-size: cover;
+}
+
+.first-place .container {
+  display: flex;
+  padding: 230px 0 100px;
+}
+
+.place-info {
+  flex: 0 48%;
+  background: rgba(35, 35, 35, 0.9);
+  padding: 45px 60px 45px 30px;
+}
+
+.place-info__subtitle {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #e8e8e8;
+  margin-bottom: 30px;
+}
+
+.place-info__title {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.place-info__text {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 16px;
+  color: #e8e8e8;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=style.css.map */

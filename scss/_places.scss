@@ -1,0 +1,52 @@
+.first-place {
+    background: url('../img/places/bg-first_place.png') no-repeat;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        padding: 230px 0 100px;
+    }
+}
+
+.second-place {
+    background: url('../img/places/bg-second_place.png') no-repeat;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        padding: 230px 0 100px;
+        justify-content: flex-end;
+    }
+}
+
+.first-place {
+    background: url('../img/places/bg-first_place.png') no-repeat;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        padding: 230px 0 100px;
+    }
+}
+
+.place-info {
+    flex: 0 48%;
+    background: rgba($color: #232323, $alpha: 0.9);
+    padding: 45px 60px 45px 30px;
+
+    &__subtitle {
+        @include font('josefin_sansregular', 400, 20px, 2px, $gray-light, null);
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        @include font('josefin_sansregular', 400, 20px, null, $white, null);
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        @include font('josefin_sansregular', 400, 16px, null, $gray-light, null);
+        line-height: 26px;
+        margin-bottom: 50px;
+    }
+}
