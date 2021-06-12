@@ -25,3 +25,13 @@ a, a:visited {
 $white:#ffffff;
 $blue:#5373fd;
 $gray:#999999;
+$gray-light:#e8e8e8;
+
+.general-btn {
+    @include font('josefin_sansregular', 400, 16px, 1px, $white, uppercase);
+    background: $blue;
+    padding: 20px;
+    border: none;
+    width: fit-content;
+}
+

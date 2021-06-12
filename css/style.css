@@ -1,27 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  list-style: none;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1110px;
-  margin: 0 auto;
-}
-
 @font-face {
   font-family: 'aleobold';
   src: url("../fonts/aleo/aleo-bold-webfont.eot");
@@ -84,6 +60,43 @@ a, a:visited {
   src: url("../fonts/josefin-sans/josefin-sans.regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/josefin-sans/josefin-sans.regular-webfont.woff2") format("woff2"), url("../fonts/josefin-sans/josefin-sans.regular-webfont.woff") format("woff"), url("../fonts/josefin-sans/josefin-sans.regular-webfont.ttf") format("truetype"), url("../fonts/josefin-sans/josefin-sans.regular-webfont.svg#josefin_sansregular") format("svg");
   font-weight: 400;
   font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.general-btn {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #5373fd;
+  padding: 20px;
+  border: none;
+  width: fit-content;
 }
 
 .header {
@@ -251,6 +264,84 @@ a, a:visited {
 @media screen and (max-width: 992px) {
   .header-nav__btn {
     display: block;
+  }
+}
+
+.choose-us {
+  background: url("../img/choose-us/bg_chooseUs.png") no-repeat;
+  background-size: cover;
+}
+
+.choose-us .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 115px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .choose-us .container {
+    padding: 115px 30px;
+  }
+}
+
+.choose-us__info {
+  flex: 0 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .choose-us__info {
+    flex: none;
+    width: 100%;
+  }
+}
+
+.choose-us__info-title {
+  font-family: "aleoregular";
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+.choose-us__info-text {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #e8e8e8;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.choose-us__photo {
+  flex: 0 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.choose-us__photo-img {
+  max-width: fit-content;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .choose-us__photo-img {
+    display: none;
+  }
+}
+
+.choose-us__photo-img--first {
+  margin: 0 125px 5px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .choose-us__photo-img--first {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
