@@ -1,0 +1,123 @@
+.header {
+    background: url('../img/header/bg-header.png') no-repeat;
+    background-size: cover;
+}
+
+.header-intro {
+    padding: 265px 0 130px;
+    &__title {
+        @include font('josefin_sansbold', 700, 48px, 5px, $white, uppercase);
+        text-align: center;
+        
+    }
+
+    &__subtitle {
+        @include font('josefin_sansregular', 400, 22px, 7px, $white, capitalize);
+        line-height: 26px;
+        text-align: center;
+    }
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 45px 0 115px;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__input {
+        padding: 15px 0;
+        width: 40%;
+        border: none;
+
+        @media screen and (max-width: 768px) {
+            width: 70%;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 90%;
+        }
+
+        &::placeholder {
+            @include font('josefin_sansregular', 400, 14px, 3px, $gray, capitalize);
+            text-align: center
+        }
+    }
+
+    &__btn {
+        @include font('aleoregular', 400, 14px, 1px, $white, uppercase);
+        text-align: center;
+        background: $blue;
+        padding: 15px 10px 15px 30px;
+        margin: 0;
+        border: 1px solid $white;
+    }
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+        @include font('josefin_sansregular', 400, 14px, 3px, $white, capitalize);
+    }
+}
+
+.header-nav {
+    height: 80px;
+    background: $blue;
+    display: flex;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        @include font('josefin_sansbold', 700, 24px, 2px, $white, uppercase);
+        line-height: 26px;
+    }
+
+    &__item {
+        margin-right: 25px;
+    }
+
+    &__link {
+        @include font('aleoregular', 400, 14px, null, $white, uppercase);
+        padding: 10px;
+
+        &:hover {
+            background: $white;
+            color: $blue;
+            transition-duration: 0.5s;
+        }
+    }
+
+    &__btn {
+        display: none;
+        border: none;
+        font-size: 30px;
+        background: $blue;
+        color: #ffffff;
+
+        @media screen and (max-width: 992px) {
+            display: block;
+        }
+    }
+}
