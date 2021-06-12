@@ -1,0 +1,61 @@
+.choose-us {
+    background: url('../img/choose-us/bg_chooseUs.png') no-repeat;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 115px 0;
+
+        @media screen and (max-width: 1200px) {
+            padding: 115px 30px;
+        }
+    }
+
+    &__info {
+        flex: 0 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media screen and (max-width: 768px) {
+            flex: none;
+            width: 100%;
+        }
+
+        &-title {
+            @include font('aleoregular', 400, 36px, null, $white, capitalize);
+            margin-bottom: 60px;
+        }
+
+        &-text {
+            @include font('josefin_sansregular', 400, 16px, 2px, $gray-light, null);
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__photo {
+        flex: 0 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &-img {
+            max-width: fit-content;
+            height: auto;
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+
+            &--first {
+               margin: 0 125px 5px 0;
+
+               @media screen and (max-width: 992px) {
+                    margin: 0;
+               }
+            }
+        }
+    }
+}
