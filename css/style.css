@@ -107,6 +107,22 @@ a, a:visited {
   text-transform: capitalize;
 }
 
+.info-title {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.info-text {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 16px;
+  color: #e8e8e8;
+  line-height: 26px;
+}
+
 .header {
   background: url("../img/header/bg-header.png") no-repeat;
   background-size: cover;
@@ -446,19 +462,68 @@ a, a:visited {
 }
 
 .place-info__title {
-  font-family: "josefin_sansregular";
-  font-weight: 400;
-  font-size: 20px;
-  color: #ffffff;
   margin-bottom: 25px;
 }
 
 .place-info__text {
-  font-family: "josefin_sansregular";
-  font-weight: 400;
-  font-size: 16px;
-  color: #e8e8e8;
-  line-height: 26px;
   margin-bottom: 50px;
+}
+
+.reviews {
+  background: url("../img/reviews/bg-reviews.png") no-repeat;
+  background-size: cover;
+}
+
+.reviews .container {
+  padding: 115px 0 195px;
+}
+
+@media screen and (max-width: 1200px) {
+  .reviews .container {
+    margin: 0 20px;
+  }
+}
+
+.reviews-title {
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+.reviews-block {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-block {
+    flex-direction: column;
+  }
+}
+
+.reviews-block__info {
+  background: #333333;
+  padding: 50px 50px 50px 60px;
+  position: relative;
+  top: -5px;
+}
+
+@media screen and (max-width: 576px) {
+  .reviews-block__info {
+    padding: 20px 20px 20px 30px;
+  }
+}
+
+.reviews-block__title {
+  margin-bottom: 30px;
+}
+
+.reviews-block__quotes {
+  font-size: 26px;
+  color: #5373fd;
+  margin-right: 5px;
+}
+
+.reviews-block__img {
+  width: auto;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -40,3 +40,11 @@ $gray-brown:#333333;
     @include font('aleoregular', 400, 36px, null, $white, capitalize);
 }
 
+.info-title {
+    @include font('josefin_sansregular', 400, 20px, null, $white, uppercase);
+}
+
+.info-text {
+    @include font('josefin_sansregular', 400, 16px, null, $gray-light, null);
+    line-height: 26px;
+}
