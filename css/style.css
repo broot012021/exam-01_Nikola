@@ -202,11 +202,15 @@ a, a:visited {
   letter-spacing: 1px;
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
   background: #5373fd;
   padding: 15px 10px 15px 30px;
-  margin: 0;
   border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.search__btn > svg {
+  margin-left: 10px;
 }
 
 .scroll {
@@ -222,6 +226,7 @@ a, a:visited {
   letter-spacing: 3px;
   color: #ffffff;
   text-transform: capitalize;
+  margin-bottom: 10px;
 }
 
 .header-nav {
@@ -234,6 +239,13 @@ a, a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: -webkit-fill-available;
+}
+
+@media screen and (max-width: 992px) {
+  .header-nav .container {
+    padding: 0 20px;
+  }
 }
 
 .header-nav__list {
@@ -255,7 +267,6 @@ a, a:visited {
   letter-spacing: 2px;
   color: #ffffff;
   text-transform: uppercase;
-  line-height: 26px;
 }
 
 .header-nav__item {
@@ -525,5 +536,58 @@ a, a:visited {
 .reviews-block__img {
   width: auto;
   height: 100%;
+}
+
+.footer {
+  background: #232323;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 115px 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .container {
+    padding: 50px 0 30px;
+  }
+}
+
+.footer-logo {
+  font-family: "josefin_sansbold";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-subtitle {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social__link {
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 25%;
+}
+
+.footer-social__link:hover {
+  color: #5373fd;
+  background: #ffffff;
+  transition-duration: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

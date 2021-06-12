@@ -50,11 +50,15 @@
 
     &__btn {
         @include font('aleoregular', 400, 14px, 1px, $white, uppercase);
-        text-align: center;
         background: $blue;
         padding: 15px 10px 15px 30px;
-        margin: 0;
         border: 1px solid $white;
+        display: flex;
+        align-items: center;
+
+        &>svg {
+            margin-left: 10px;
+        }
     }
 }
 
@@ -65,6 +69,7 @@
 
     &__text {
         @include font('josefin_sansregular', 400, 14px, 3px, $white, capitalize);
+        margin-bottom: 10px;
     }
 }
 
@@ -77,6 +82,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: -webkit-fill-available;
+
+        @media screen and (max-width: 992px) {
+            padding: 0 20px;
+        }
     }
 
     &__list {
@@ -91,7 +101,6 @@
 
     &__logo {
         @include font('josefin_sansbold', 700, 24px, 2px, $white, uppercase);
-        line-height: 26px;
     }
 
     &__item {
