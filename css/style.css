@@ -4,67 +4,253 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: 'aleobold';
-  src: url("../fonts/aleo-bold-webfont.eot");
-  src: url("../fonts/aleo-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-bold-webfont.woff2") format("woff2"), url("../fonts/aleo-bold-webfont.woff") format("woff"), url("../fonts/aleo-bold-webfont.ttf") format("truetype"), url("../fonts/aleo-bold-webfont.svg#aleobold") format("svg");
+  src: url("../fonts/aleo/aleo-bold-webfont.eot");
+  src: url("../fonts/aleo/aleo-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/aleo-bold-webfont.woff2") format("woff2"), url("../fonts/aleo/aleo-bold-webfont.woff") format("woff"), url("../fonts/aleo/aleo-bold-webfont.ttf") format("truetype"), url("../fonts/aleo/aleo-bold-webfont.svg#aleobold") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'aleobolditalic';
-  src: url("../fonts/aleo-bolditalic-webfont.eot");
-  src: url("../fonts/aleo-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-bolditalic-webfont.woff2") format("woff2"), url("../fonts/aleo-bolditalic-webfont.woff") format("woff"), url("../fonts/aleo-bolditalic-webfont.ttf") format("truetype"), url("../fonts/aleo-bolditalic-webfont.svg#aleobolditalic") format("svg");
+  src: url("../fonts/aleo/aleo-bolditalic-webfont.eot");
+  src: url("../fonts/aleo/aleo-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/aleo-bolditalic-webfont.woff2") format("woff2"), url("../fonts/aleo/aleo-bolditalic-webfont.woff") format("woff"), url("../fonts/aleo/aleo-bolditalic-webfont.ttf") format("truetype"), url("../fonts/aleo/aleo-bolditalic-webfont.svg#aleobolditalic") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'aleoitalic';
-  src: url("../fonts/aleo-italic-webfont.eot");
-  src: url("../fonts/aleo-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-italic-webfont.woff2") format("woff2"), url("../fonts/aleo-italic-webfont.woff") format("woff"), url("../fonts/aleo-italic-webfont.ttf") format("truetype"), url("../fonts/aleo-italic-webfont.svg#aleoitalic") format("svg");
+  src: url("../fonts/aleo/aleo-italic-webfont.eot");
+  src: url("../fonts/aleo/aleo-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/aleo-italic-webfont.woff2") format("woff2"), url("../fonts/aleo/aleo-italic-webfont.woff") format("woff"), url("../fonts/aleo/aleo-italic-webfont.ttf") format("truetype"), url("../fonts/aleo/aleo-italic-webfont.svg#aleoitalic") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'aleolight';
-  src: url("../fonts/aleo-light-webfont.eot");
-  src: url("../fonts/aleo-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-light-webfont.woff2") format("woff2"), url("../fonts/aleo-light-webfont.woff") format("woff"), url("../fonts/aleo-light-webfont.ttf") format("truetype"), url("../fonts/aleo-light-webfont.svg#aleolight") format("svg");
+  src: url("../fonts/aleo/aleo-light-webfont.eot");
+  src: url("../fonts/aleo/aleo-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/aleo-light-webfont.woff2") format("woff2"), url("../fonts/aleo/aleo-light-webfont.woff") format("woff"), url("../fonts/aleo/aleo-light-webfont.ttf") format("truetype"), url("../fonts/aleo/aleo-light-webfont.svg#aleolight") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'aleolightitalic';
-  src: url("../fonts/aleo-lightitalic-webfont.eot");
-  src: url("../fonts/aleo-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-lightitalic-webfont.woff2") format("woff2"), url("../fonts/aleo-lightitalic-webfont.woff") format("woff"), url("../fonts/aleo-lightitalic-webfont.ttf") format("truetype"), url("../fonts/aleo-lightitalic-webfont.svg#aleolightitalic") format("svg");
+  src: url("../fonts/aleo/aleo-lightitalic-webfont.eot");
+  src: url("../fonts/aleo/aleo-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/aleo-lightitalic-webfont.woff2") format("woff2"), url("../fonts/aleo/aleo-lightitalic-webfont.woff") format("woff"), url("../fonts/aleo/aleo-lightitalic-webfont.ttf") format("truetype"), url("../fonts/aleo/aleo-lightitalic-webfont.svg#aleolightitalic") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'aleoregular';
-  src: url("../fonts/aleo-regular-webfont.eot");
-  src: url("../fonts/aleo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-regular-webfont.woff2") format("woff2"), url("../fonts/aleo-regular-webfont.woff") format("woff"), url("../fonts/aleo-regular-webfont.ttf") format("truetype"), url("../fonts/aleo-regular-webfont.svg#aleoregular") format("svg");
+  src: url("../fonts/aleo/aleo-regular-webfont.eot");
+  src: url("../fonts/aleo/aleo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/aleo-regular-webfont.woff2") format("woff2"), url("../fonts/aleo/aleo-regular-webfont.woff") format("woff"), url("../fonts/aleo/aleo-regular-webfont.ttf") format("truetype"), url("../fonts/aleo/aleo-regular-webfont.svg#aleoregular") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'josefin_sansbold';
-  src: url("josefin-sans.bold-webfont.eot");
-  src: url("josefin-sans.bold-webfont.eot?#iefix") format("embedded-opentype"), url("josefin-sans.bold-webfont.woff2") format("woff2"), url("josefin-sans.bold-webfont.woff") format("woff"), url("josefin-sans.bold-webfont.ttf") format("truetype"), url("josefin-sans.bold-webfont.svg#josefin_sansbold") format("svg");
+  src: url("../fonts/josefin-sans/josefin-sans.bold-webfont.eot");
+  src: url("../fonts/josefin-sans/josefin-sans.bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/josefin-sans/josefin-sans.bold-webfont.woff2") format("woff2"), url("../fonts/josefin-sans/josefin-sans.bold-webfont.woff") format("woff"), url("../fonts/josefin-sans/josefin-sans.bold-webfont.ttf") format("truetype"), url("../fonts/josefin-sans/josefin-sans.bold-webfont.svg#josefin_sansbold") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'josefin_sansregular';
-  src: url("josefin-sans.regular-webfont.eot");
-  src: url("josefin-sans.regular-webfont.eot?#iefix") format("embedded-opentype"), url("josefin-sans.regular-webfont.woff2") format("woff2"), url("josefin-sans.regular-webfont.woff") format("woff"), url("josefin-sans.regular-webfont.ttf") format("truetype"), url("josefin-sans.regular-webfont.svg#josefin_sansregular") format("svg");
+  src: url("../fonts/josefin-sans/josefin-sans.regular-webfont.eot");
+  src: url("../fonts/josefin-sans/josefin-sans.regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/josefin-sans/josefin-sans.regular-webfont.woff2") format("woff2"), url("../fonts/josefin-sans/josefin-sans.regular-webfont.woff") format("woff"), url("../fonts/josefin-sans/josefin-sans.regular-webfont.ttf") format("truetype"), url("../fonts/josefin-sans/josefin-sans.regular-webfont.svg#josefin_sansregular") format("svg");
   font-weight: 400;
   font-style: normal;
+}
+
+.header {
+  background: url("../img/header/bg-header.png") no-repeat;
+  background-size: cover;
+}
+
+.header-intro {
+  padding: 265px 0 130px;
+}
+
+.header-intro__title {
+  font-family: "josefin_sansbold";
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-intro__subtitle {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 7px;
+  color: #ffffff;
+  text-transform: capitalize;
+  line-height: 26px;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 45px 0 115px;
+}
+
+@media screen and (max-width: 768px) {
+  .search {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.search__input {
+  padding: 15px 0;
+  width: 40%;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .search__input {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .search__input {
+    width: 90%;
+  }
+}
+
+.search__input::placeholder {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #999999;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.search__btn {
+  font-family: "aleoregular";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background: #5373fd;
+  padding: 15px 10px 15px 30px;
+  margin: 0;
+  border: 1px solid #ffffff;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll__text {
+  font-family: "josefin_sansregular";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.header-nav {
+  height: 80px;
+  background: #5373fd;
+  display: flex;
+}
+
+.header-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .header-nav__list {
+    display: none;
+  }
+}
+
+.header-nav__logo {
+  font-family: "josefin_sansbold";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.header-nav__item {
+  margin-right: 25px;
+}
+
+.header-nav__link {
+  font-family: "aleoregular";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.header-nav__link:hover {
+  background: #ffffff;
+  color: #5373fd;
+  transition-duration: 0.5s;
+}
+
+.header-nav__btn {
+  display: none;
+  border: none;
+  font-size: 30px;
+  background: #5373fd;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+  .header-nav__btn {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

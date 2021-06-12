@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+$white:#ffffff;
+$blue:#5373fd;
+$gray:#999999;
