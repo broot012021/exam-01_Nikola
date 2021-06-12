@@ -26,6 +26,7 @@ $white:#ffffff;
 $blue:#5373fd;
 $gray:#999999;
 $gray-light:#e8e8e8;
+$gray-brown:#333333;
 
 .general-btn {
     @include font('josefin_sansregular', 400, 16px, 1px, $white, uppercase);
@@ -33,5 +34,9 @@ $gray-light:#e8e8e8;
     padding: 20px;
     border: none;
     width: fit-content;
+}
+
+.general-title {
+    @include font('aleoregular', 400, 36px, null, $white, capitalize);
 }
 
